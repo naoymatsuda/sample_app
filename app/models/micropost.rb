@@ -5,7 +5,7 @@ class Micropost < ApplicationRecord
   validates :content, presence: true, length: { maximum: 140 }
   mount_uploader :picture, PictureUploader
   validate  :picture_size
-  
+   
   private
 
   # アップロードされた画像のサイズをバリデーションする
